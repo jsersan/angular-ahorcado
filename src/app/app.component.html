@@ -1,0 +1,42 @@
+<!-- <footer class="col text-center gn-footer">
+  <h1>Juego Ahorcado</h1>
+</footer> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col text-center hanged">
+      <h1>Adivina la palabra</h1>
+      <h3>o muere en el intento</h3>
+      <img class="ahorcado-img" src="./assets/img/{{errores}}.png" alt="ahorcado">
+      <h1>{{palabraOculta}}</h1>
+    </div>
+  </div>
+  
+  <div class="row hanged" *ngIf="gano">
+    <div class="col text-center">
+      <h2>¡FELICIDADES, GANASTE!</h2>
+    </div>
+  </div>
+  
+  <div class="row hanged" *ngIf="perdio">
+    <div class="col text-center">
+      <h2>Lo siento, has perdido :(</h2>
+      <h4>La palabra correcta era: </h4>
+      <h4>{{palabra}}</h4>
+    </div>
+  </div>
+  
+  <div class="row intentos" *ngIf="mostrarIntentos">
+    <div class="col text-center">
+      <h3>Te quedan {{intentos}} intentos</h3>
+    </div>
+  </div>
+  
+  <div class="row letras-row" *ngIf="mostrarLetras">
+    <div class="col text-center">
+      <button *ngFor="let letra of letras" (click)="comprobar(letra)" class="btn btn-primary">
+        {{ letra }}
+      </button>
+    </div> 
+  </div>
+</div>

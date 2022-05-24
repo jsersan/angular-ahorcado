@@ -1,0 +1,25 @@
+
+body{
+    background-color: #a3c3d2;
+}
+
+.ahorcado-img{
+    height: 400px;
+}
+
+button{
+    margin-top: 5px;
+    margin-left: 5px;
+    /* color: #fff !important;*/
+    background-color: #59a0bf !important; 
+    border-color: #59a0bf !important;
+}
+.gn-footer{
+    /* background-color: #59a0bf; */
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.p-footer{
+    margin-bottom: 0px !important;
+}
